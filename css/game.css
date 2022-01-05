@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.game-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-container {
+  width: 80vw;
+  height: 500px;
+  border: 2px solid rgb(148, 147, 147);
+}
+
+@media screen and (min-width: 1024px) {
+  .game-container {
+    width: 50vw;
+  }
+}
+
+#character {
+  width: 20px;
+  height: 50px;
+  background: tomato;
+  position: relative;
+  top: 450px;
+}
+
+.animate {
+  animation: jump 0.5s;
+}
+
+#block {
+  width: 20px;
+  height: 25px;
+  background-color: dodgerblue;
+  position: relative;
+  top: 425px;
+  left: 490px;
+  animation: block-move 1.5s infinite linear;
+}
+
+@keyframes block-move {
+  from {
+    left: 490px;
+  }
+  to {
+    left: -10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  @keyframes block-move {
+    from {
+      left: 280px;
+    }
+    to {
+      left: -10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  @keyframes block-move {
+    from {
+      left: 800px;
+    }
+    to {
+      left: -10px;
+    }
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 450px;
+  }
+  30% {
+    top: 420px;
+  }
+  70% {
+    top: 420px;
+  }
+  100% {
+    top: 450px;
+  }
+}
