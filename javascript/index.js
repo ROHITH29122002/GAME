@@ -1,10 +1,10 @@
 if (localStorage.getItem('name')){
-    document.getElementById('nameform-container').classList.add('nameform-container');
+    document.getElementById('nameform-container').style.display="none";
     nameplacer();
 }
 else{
+    document.getElementById('name-container').style.display="none";
     document.querySelector('#name-submit').disabled=true;
-    document.getElementById('name-container').classList.add('name-container');
     document.getElementById('name-input').onkeyup = function(){
         if(document.querySelector('#name-input').value.length>0){
             document.querySelector('#name-submit').disabled=false;
