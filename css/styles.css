@@ -29,6 +29,7 @@ body {
 }
 
 .name-heading {
+  color: #fff;
   font-size: 4rem;
   margin: 5rem;
   text-shadow: rgba(0, 0, 0, 0.2);
@@ -77,6 +78,10 @@ body {
 }
 .name-container {
   margin: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .name-holder {
   text-align: center;
@@ -99,6 +104,7 @@ body {
 }
 
 .gamelink-container {
+  margin-top: 6rem;
   display: flex;
   justify-content: center;
   align-items: center;
