@@ -25,6 +25,7 @@ body {
 }
 
 .nameform-container {
+  margin-bottom: 5rem;
   flex-direction: column;
 }
 
@@ -77,7 +78,7 @@ body {
   font-size: 3rem;
 }
 .name-container {
-  margin: 8rem;
+  margin: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,4 +109,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.logo-container {
+  margin-top: 2rem;
+  width: 20vw;
+}
+
+.logo {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .logo-container {
+    width: 20vw;
+  }
 }
