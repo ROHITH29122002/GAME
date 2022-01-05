@@ -74,3 +74,11 @@ body {
   color: black;
   font-size: 3rem;
 }
+.name-container {
+  margin: 8rem;
+}
+.name-holder {
+  text-align: center;
+  font-size: 4rem;
+  color: #fff;
+}
