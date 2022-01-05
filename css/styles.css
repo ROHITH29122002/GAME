@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -81,4 +82,24 @@ body {
   text-align: center;
   font-size: 4rem;
   color: #fff;
+}
+
+.gamelink-button {
+  padding: 2rem 3rem;
+  background-color: rgb(139, 226, 7);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.gamelink {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+.gamelink-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
