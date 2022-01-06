@@ -15,11 +15,26 @@ setInterval(() => {
     var blockleft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
     if( blockleft>10 && blockleft<30 && charactertop>355){
         block.style.animation="none";
-        block.style.display="none";
-        alert("GAME OVER");
+        clearInterval(counting);
+        if(localStorage.getItem('highscore')<(counter*50)){
+            localStorage.setItem('highscore',counter*50);
+        }
+        alert(`GAME OVER!`);
+        document.querySelector('h1').innerHTML=`HIGHSCORE : ${localStorage.getItem('highscore')}`;
     }
 }, 10);
 
 document.querySelector('#restart-button').onclick=function (){
     location.reload();
 };
+
+let counter=0;
+document.querySelector('h1').innerHTML=`HIGHSCORE : ${localStorage.getItem('highscore')}`;
+const counting = setInterval(() => {
+    counter++;
+    document.querySelector('h2').innerHTML=` SCORE : ${counter*50}`;
+}, 1000);
+
+if (!localStorage.getItem('highscore')){
+    localStorage.setItem('highscore',0);
+}
