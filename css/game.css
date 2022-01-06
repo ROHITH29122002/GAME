@@ -25,9 +25,9 @@
 
 #character {
   width: 20px;
-  height: 50px;
+  height: 100px;
   position: relative;
-  top: 450px;
+  top: 400px;
   left: 10px;
 }
 .dinosaur {
@@ -41,9 +41,9 @@
 
 #block {
   width: 20px;
-  height: 25px;
+  height: 50px;
   position: relative;
-  top: 425px;
+  top: 350px;
   left: 490px;
   animation: block-move 1.5s infinite linear;
 }
@@ -86,16 +86,16 @@
 
 @keyframes jump {
   0% {
-    top: 450px;
+    top: 400px;
   }
   30% {
-    top: 420px;
+    top: 350px;
   }
   70% {
-    top: 420px;
+    top: 350px;
   }
   100% {
-    top: 450px;
+    top: 400px;
   }
 }
 
