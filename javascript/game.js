@@ -13,7 +13,7 @@ document.querySelector('.game-container').onclick = function jump(){
 setInterval(() => {
     var charactertop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockleft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    if( blockleft>10 && blockleft<30 && charactertop>350){
+    if( blockleft>10 && blockleft<30 && charactertop>355){
         block.style.animation="none";
         block.style.display="none";
         alert("GAME OVER");
