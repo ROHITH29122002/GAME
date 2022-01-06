@@ -55,6 +55,11 @@ body {
   color: black;
   margin-left: 2rem;
 }
+.name-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 400px) {
   .name-form {
@@ -65,12 +70,6 @@ body {
     margin-left: 0;
   }
 }
-.name-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .name-submit-green {
   background-color: rgb(139, 216, 23);
   color: #fff;
