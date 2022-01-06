@@ -125,3 +125,15 @@ body {
     width: 20vw;
   }
 }
+
+.logout {
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #fff;
+  outline: 0;
+  border: 1px solid #f66;
+  background: red;
+  margin-top: 3rem;
+  padding: 2rem 3rem;
+}

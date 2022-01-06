@@ -25,3 +25,8 @@ else{
 function nameplacer(){
     document.getElementById('name-holder').innerHTML=`WELCOME  ${localStorage.getItem('name')}`;
 }
+
+document.querySelector('#logout').onclick= function (){
+    localStorage.clear();
+    location.reload();
+}
