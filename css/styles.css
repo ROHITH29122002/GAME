@@ -56,7 +56,7 @@ body {
   margin-left: 2rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .name-form {
     flex-direction: column;
   }
@@ -90,6 +90,7 @@ body {
 }
 
 .hero-para {
+  text-align: center;
   color: black;
   font-size: 3rem;
 }
