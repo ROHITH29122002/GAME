@@ -13,8 +13,9 @@ document.querySelector('.game-container').onclick = function jump(){
 setInterval(() => {
     var charactertop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockleft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
-    if( blockleft>10 && blockleft<30 && charactertop>355){
+    if( blockleft>10 && blockleft<30 && charactertop>155){
         block.style.animation="none";
+        block.style.display="none";
         clearInterval(counting);
         if(localStorage.getItem('highscore')<(counter*50)){
             localStorage.setItem('highscore',counter*50);
