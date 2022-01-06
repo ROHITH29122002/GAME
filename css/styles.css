@@ -53,6 +53,22 @@ body {
   border-radius: 5px;
   padding: 2rem 3rem;
   color: black;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  .name-form {
+    flex-direction: column;
+  }
+  .name-submit {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+}
+.name-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .name-submit-green {
