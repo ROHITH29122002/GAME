@@ -33,7 +33,7 @@ let counter=0;
 document.querySelector('#highscore').innerHTML=`HIGHSCORE : ${localStorage.getItem('highscore')}`;
 const counting = setInterval(() => {
     counter++;
-    document.querySelector('#score').innerHTML=` SCORE : ${counter*50}`;
+    document.querySelector('#score').innerHTML=` YOUR SCORE : ${counter*50}`;
 }, 1000);
 
 if (!localStorage.getItem('highscore')){
